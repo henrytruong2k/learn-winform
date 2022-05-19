@@ -72,14 +72,14 @@
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             this.inventoryToolStripMenuItem.Click += new System.EventHandler(this.inventoryToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.userToolStripMenuItem.Text = "User";
             this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
@@ -101,7 +101,7 @@
             // cashierToolStripMenuItem
             // 
             this.cashierToolStripMenuItem.Name = "cashierToolStripMenuItem";
-            this.cashierToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.cashierToolStripMenuItem.Size = new System.Drawing.Size(171, 34);
             this.cashierToolStripMenuItem.Text = "Cashier";
             this.cashierToolStripMenuItem.Click += new System.EventHandler(this.cashierToolStripMenuItem_Click);
             // 
