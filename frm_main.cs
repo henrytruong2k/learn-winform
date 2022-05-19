@@ -12,9 +12,12 @@ namespace MyFirstProject
 {
     public partial class frm_main : Form
     {
-        public frm_main()
+        public static string _username;
+        public frm_main(string username)
         {
             InitializeComponent();
+            _username = username;
+            lbl_username.Text = "Hi, " + username;
         }
         frm_inventory frmInventory;
         frm_user frmUser;
@@ -39,6 +42,5 @@ namespace MyFirstProject
                 form.Activate();
             }
         }
-
     }
 }

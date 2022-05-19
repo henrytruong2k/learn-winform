@@ -16,6 +16,8 @@ namespace MyFirstProject
         public frm_login()
         {
             InitializeComponent();
+            txt_username.Text = "admin";
+            txt_password.Text = "123456";
         }
 
         private void btn_login_Click(object sender, EventArgs e)
@@ -27,8 +29,7 @@ namespace MyFirstProject
                 if (loginTable.Rows.Count > 0)
                 {
                     MessageBox.Show("You logged in");
-                    //call frm_main
-                    frm_main frm_Main = new frm_main();
+                    frm_main frm_Main = new frm_main(txt_username.Text);
                     frm_Main.Show();
                     this.Hide();
                 }
@@ -42,5 +43,12 @@ namespace MyFirstProject
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void frm_login_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = this.btn_login;
+        }
+
+        
     }
 }

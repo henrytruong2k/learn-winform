@@ -89,7 +89,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 30);
+            this.label1.Size = new System.Drawing.Size(26, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "ID";
             // 
@@ -98,7 +98,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 30);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Barcode";
             // 
@@ -107,7 +107,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 30);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Product";
             // 
@@ -116,7 +116,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(26, 178);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 30);
+            this.label4.Size = new System.Drawing.Size(44, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Price";
             // 
@@ -125,7 +125,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(26, 224);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 30);
+            this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Quantity";
             // 
@@ -147,6 +147,7 @@
             this.btn_update.TabIndex = 11;
             this.btn_update.Text = "Update";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_delete
             // 
@@ -156,15 +157,16 @@
             this.btn_delete.TabIndex = 12;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(744, 46);
+            this.label6.Location = new System.Drawing.Point(731, 43);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 20);
+            this.label6.Size = new System.Drawing.Size(86, 20);
             this.label6.TabIndex = 13;
-            this.label6.Text = "label6";
+            this.label6.Text = "Search By:";
             // 
             // cbo_searchBy
             // 
@@ -180,6 +182,7 @@
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(277, 26);
             this.txt_search.TabIndex = 15;
+            this.txt_search.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_search_KeyUp);
             // 
             // dgv_inventory
             // 

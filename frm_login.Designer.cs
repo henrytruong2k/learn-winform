@@ -90,6 +90,7 @@
             this.Controls.Add(this.txt_username);
             this.Name = "frm_login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frm_login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
